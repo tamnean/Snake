@@ -9,13 +9,13 @@ public class SetUp : MonoBehaviour {
 	public GameObject sprite;
 	public GameObject snake;
 	
-	private List<Vector2> grid = new List<Vector2>();
+	//private List<Vector2> grid = new List<Vector2>();
 
 	void Awake () {
 		//snake = GetComponent<Transform>();
 		for (int x = 1; x<= collumn ; x++) {
 			for (int y = 1; y <= row; y++) {
-				grid.Add(new Vector2(x,y));
+				//grid.Add(new Vector2(x,y));
 				Instantiate(sprite,new Vector2(x,y),Quaternion.identity);
 			}
 		}
